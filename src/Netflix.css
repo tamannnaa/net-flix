@@ -1,0 +1,63 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Add some gap between the cards */
+  padding: 20px;
+  background-color: rgb(186, 181, 218);
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  margin: 10px;
+  transition: box-shadow 0.8s ease;
+  flex: 1 1 calc(33.33% - 40px); /* Allow the card to grow and shrink, ensuring three cards per row */
+  box-sizing: border-box;
+}
+
+.card:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 1.9);
+  transform: translateY(-2px);
+}
+
+.simage {
+  width: 100%;
+  height: auto;
+}
+
+.card-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-category {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.watch-button {
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.watch-button:hover {
+  background-color: #e5533d;
+}
